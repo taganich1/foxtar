@@ -4,6 +4,7 @@
 
 
 
+
 body{
     font-size: 15px;
     line-height: 24px;
@@ -82,7 +83,12 @@ a{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: #a0a0a0;
         font-size: 14px;
     }
+}
+
+
+.kek-228:before{
+    content: "\eadb";
+    font-family: "icomoon" ;
 }
