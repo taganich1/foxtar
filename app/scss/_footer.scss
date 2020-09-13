@@ -1,0 +1,70 @@
+@import "vars";
+
+.footer{
+    background-color: $fon;
+}
+
+.footer__content{
+    padding: 100px 0;
+    border-bottom: 1px solid #424d53 ;
+}
+
+.footer__copy{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer__copy-text{
+    line-height: 36px;
+    color: #919699;
+}
+
+.footer__title{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: $ral;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $green;
+        height: 3px;
+        width: 50px;
+    }
+}
+
+.footer__text{
+    margin-bottom: 25px;
+}
+
+.footer__adress,
+.footer__phone{
+    font-size: 14px;
+    color: #ffffff;
+    font-family: $lato;
+    padding-left: 30px;
+    position: relative;
+    &:before{
+        content: "";
+        color: $green;
+        font-family: "icomoon";
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+.footer__adress:before{
+    content: "\f041";
+}
+
+.footer__phone{
+    margin-top: 20px;
+    &:before{
+    content: "\f095";
+    display: block;
+}
+}
