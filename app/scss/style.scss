@@ -110,3 +110,19 @@ a{
     }
 
 }
+
+.header__navigation{
+    background-color: $fon;
+    li{
+        display: inline-block;
+        & + li{
+            padding-left: 35px;
+        }
+        a{
+            line-height: 60px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
