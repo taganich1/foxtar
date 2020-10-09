@@ -1,12 +1,9 @@
-
-@import "vars";
 @import "fonts";
+@import "vars";
 @import "global";
-@import "footer";
 @import "header";
+@import "footer";
 
-
-/*BODY----------------------------------*/
 
 body{
     font-size: 15px;
@@ -19,23 +16,14 @@ body{
 ul{
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
-li{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
 
 a{
     display: inline-block;
     text-decoration: none;
 
 }
-
-/*HEADER----------------------------------*/
-
 
 .header__inner{
     display: flex;
@@ -55,7 +43,6 @@ a{
 .header__phone{
     margin-left: auto;
     margin-right: 25px;
-    
     span{
         color: $orange;   
     }
@@ -95,23 +82,19 @@ a{
     position: relative;
     margin-right: 15px;
     .header__icon{
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        color: #a0a0a0;
         font-size: 14px;
     }
 }
 
-.image__basket img {
-    position: absolute;
-    left: 8px;
-    top: 8px;
-}
-
 .header__icon-circle{
     display: inline-block;
-    height: 18px;
     width: 18px;
+    height: 18px;
     border-radius: 50%;
     line-height: 18px;
     text-align: center;
@@ -128,9 +111,8 @@ a{
     .header__icon-circle{
         background-color: $green;
     }
+
 }
-
-
 
 .header__navigation{
     background-color: $fon;
@@ -147,6 +129,3 @@ a{
         }
     }
 }
-
-/*FOOTER----------------------------------*/
-
