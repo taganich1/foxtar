@@ -55,3 +55,46 @@
         color: #fff;
     }
 }
+
+.categories{
+    border: 1px solid $border;
+    background-color: #fff;
+    padding: 0px 30px 20px;
+}
+
+.categories__title{
+    font-family: $roboto;
+    color: $fon;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid $border;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+
+.categories__item {
+    a{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+}
+
+.categories__name{
+    font-family: $roboto;
+    color: $fon;
+    position: relative;
+    padding-left: 20px;
+    &:before{
+        content: "\f105";
+        left: 0;
+        position: absolute;
+        color: $green;
+        font-family: "icomoon";
+    }
+}
+
+.categories__number{
+    color: $text;    
+}
