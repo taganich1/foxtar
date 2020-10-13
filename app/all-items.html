@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@600&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/30b64357b8/UntitledProject/style.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/f2adf3f48c/UntitledProject/style.css">
     <link rel="stylesheet" href="css/style.min.css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css/style.min.css">
 
@@ -30,9 +30,9 @@
                             <span class="icon-shopping-cart header__icon"> </span>
                     </div>
                     <div class="header__btn">
-                        <button class='header__login'>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class='header__login'>
                             Login
-                        </button>
+                        </a>
                         <button class="header__registration">
                             Register
                         </button>
@@ -133,7 +133,7 @@
                         <div class="top-sellers__item">
                             <div class="item">
                                 <a href="">
-                                    <img src="img/item.jpg" width="180" alt="">
+                                    <img src="img/item.jpg" alt="">
                                 </a>
                                 <div class="item__title">
                                     <div class="item__name">
@@ -164,7 +164,7 @@
                         <div class="top-sellers__item">
                             <div class="item">
                                 <a href="">
-                                    <img src="img/item.jpg" width="180" alt="">
+                                    <img src="img/item.jpg"  alt="">
                                 </a>
                                 <div class="item__title">
                                     <div class="item__name">
@@ -195,7 +195,7 @@
                         <div class="top-sellers__item">
                             <div class="item">
                                 <a href="">
-                                    <img src="img/item.jpg" width="180" alt="">
+                                    <img src="img/item.jpg" alt="">
                                 </a>
                                 <div class="item__title">
                                     <div class="item__name">
@@ -351,6 +351,26 @@
                 </div>
             </div>
         </footer>
+
+
+        
+        <div class="popup-login" id="modal">
+            <div class="popup-login__title">
+                Login
+            </div>
+            <form class="popup-login__form">
+                <label class="popup-login__name"><input type="text" placeholder="Name"></label>
+                <label class="popup-login__password"><input type="password" placeholder="Password"></label>
+                <div class="popup-login__btn">
+                    <button>Submit</button>
+                    <a class ="popup-login__create" href="#">Create An Account?</a>
+                </div>
+                <a class="popup-login__lost" href="#">Lost Password?</a>
+            </form>
+        </div>
+
+
+
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
