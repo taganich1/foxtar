@@ -8,5 +8,9 @@ $(function(){
         prefix:"$",
         skin:"round"
     });
+
+    $('input, select').styler();
+
+    
 });
 
