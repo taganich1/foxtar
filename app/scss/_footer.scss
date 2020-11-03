@@ -109,7 +109,7 @@
         border: 1px solid #000101;
         border-bottom: 1px solid #253136;
         border-right: none;
-        color: #fff;
+        color: #fff; 
     }
     button{
         border: 1px solid #000101;
@@ -133,6 +133,9 @@
             transform: translate(-50%, -50%);
             cursor: pointer;
         }
+    &:focus{
+        outline: none;
+    }    
     }
 }
 
@@ -155,3 +158,4 @@
         padding-right: 0;
     }
 }
+
