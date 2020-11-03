@@ -89,9 +89,13 @@
     }
 }
 
-
-
 .partnership{
+    background-color: #f4f6f5;
+    padding-top: 130px;
+    padding-bottom: 140px;
+}
+
+.partnership__wrapper{
     background-color:#b5b5b5;
     height: 440px;
     width: 1000px;
@@ -141,3 +145,70 @@
     
 }
 
+.tutorials__title{
+    font-family: $roboto;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 600;
+    color: $fon;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.tutorials__text{
+    text-align: center;
+    color: $fon;
+    font-size: 24px;
+    line-height: 60px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.tutorials{
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+
+
+.strengths__item{
+    text-align: center;
+}
+
+.strengths__wrapper{
+    background-color: $fon;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.strengths__title{
+    text-align: center;
+    font-family: $roboto;
+    color: #fff;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 600;
+    padding-bottom: 120px;
+}
+
+.strengths__img{
+    padding-bottom: 30px;
+}
+
+.strengths__title-text{
+    font-family: $roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #fff;    
+    span{
+        color: $green;
+    }
+}
+
+.strengths__text{
+    font-family: $roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+ 
+}
