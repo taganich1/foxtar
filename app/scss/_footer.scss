@@ -145,8 +145,30 @@
         & + li{
             margin-left: 7px;
         }
+        a{
+            background-image: url(Эapp/img/sprite.png);
+            background-repeat: no-repeat;
+            width: 27px;ыыыыы
+            height: 27px;ыыыыыыы
+            z-index: 1000;
+        }
+        a.facebook{
+            background-position: 27px 27px;
+        }
     }
 }
+
+
+
+.footer__social a{
+    background-image: url(../img/sprite.png);
+            background-repeat: no-repeat;
+            width: 27px;
+            height: 27px;
+            display: inline-block;
+            z-index: 1000;
+}
+
 
 .all-items{
     .container{
@@ -158,4 +180,6 @@
         padding-right: 0;
     }
 }
+
+
 
