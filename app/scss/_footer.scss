@@ -1,9 +1,18 @@
 @import "vars";
 
+
 .footer{
     background-color: $fon;
+    &__content{
+        padding: 100px 0;
+        border-bottom: 1px solid #424d53;
+    }
+    &__links{
+        background: url(./../img/footer__sprite.png) no-repeat;
+        width: 27px;
+        height: 27px;
+    }
 }
-
 .footer__content{
     padding: 100px 0;
     border-bottom: 1px solid #424d53 ;
@@ -140,24 +149,17 @@
 }
 
 .footer__social{
-    li{
+    &-item{
         display: inline-block;
         & + li{
             margin-left: 7px;
         }
-        a{
-            background-image: url(../img/sprite.png);
-            background-repeat: no-repeat;
-            width: 27px;
-            height: 27px;
-            z-index: 1000;
-        }
-        a.facebook{
-            background-position: 27px 27px;
+        
+        .facebook{
+            background-position: 0px 0px;
         }
     }
 }
-
 
 
 .all-items{

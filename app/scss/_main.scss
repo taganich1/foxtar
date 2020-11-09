@@ -216,3 +216,39 @@
     max-width: 300px;
     padding-left: 30px;
 }
+
+.products-new{
+    padding-top: 120px;
+    background-color: #f4f6f5;
+}
+
+.products-new__title{
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 600;
+    color: $fon;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.products-new__btn{
+    text-align: center;
+    button{
+        font-size: 14px;
+        line-height: 40px;
+        color: $fon;
+        margin-left: 5px;
+        background-color: #fff;
+        font-weight: 500;
+        border: 1px solid #fff;
+        outline: none;
+        cursor: pointer;
+        padding-left: 25px;
+        padding-right: 25px;
+        &:nth-child(1){
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+    }
+}
