@@ -113,6 +113,122 @@
     
 }
 
-.categories{
-    max-width: 100px;
+.product{
+    border: 1px solid $border;
+    background-color: #fff;
+    padding: 0px 30px 20px;
+    margin-bottom: 30px;
+    &__title{
+        font-family: $roboto;
+        color: $fon;
+        font-size: 20px;
+        font-weight: 700;
+        border-bottom: 1px solid $border;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    .jq-selectbox{
+        width: 100%;
+    }
+    .jq-selectbox__select{
+        border-radius: 0;
+        border: 1px solid #d5d5d5;
+        height: 30px;
+        background: #fff;
+        right: -15px;
+        outline: none;
+        width: 85px;
+        box-shadow: none;
+    }
+    .jq-selectbox__select-text{
+        line-height: 30px;
+        font-size: 13px;
+        font-family: $roboto;
+        color: #70838d;
+        overflow: visible;
+    }
+    .jq-selectbox__trigger{
+        line-height: 30px;
+        border-left: none;
+    }
+    .jq-selectbox__trigger-arrow{
+        top: 13px;
+        border-top: 5px solid #8bc34a;
+        right: 6px;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        &__price{
+            font-size: 22px;
+            line-height: 30px;
+            color: #e74c3c;
+            font-weight: 500;
+        }
+    }
+    &__item__add{
+        .product__btn__cart{
+            text-align: center;
+            padding-bottom: 5px;
+            line-height: 50px;
+            button{
+                border: 1px solid $border;
+                opacity: none;
+                background-color: $green;
+                width: 210px;
+                height: 50px;
+                cursor: pointer;
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px; 
+                text-align: center;
+                &:before{
+                    content: "\f07a";
+                    font-family: "icomoon";
+                    padding-right: 9px;
+                }                               
+            }
+        }
+
+        .product__btn__favorite{
+            text-align: center;
+            padding-bottom: 5px;
+            line-height: 50px;
+            button{
+                border: 1px solid $border;
+                opacity: none;
+                background-color: #42a5f5;
+                width: 210px;
+                height: 50px;
+                cursor: pointer;
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px;
+                text-align: center;
+                &:before{
+                    content: "\f08a";
+                    font-family: "icomoon";
+                    padding-right: 9px;
+                }  
+            }
+        }
+        .product__purchase{
+            a{
+                border: 1px solid $border;
+                opacity: none;
+                background-color: #546e7a;
+                width: 210px;
+                height: 50px;
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 50px;
+                text-align: center;
+            }
+        }
+    }
 }
+
+
