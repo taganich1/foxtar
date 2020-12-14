@@ -86,11 +86,11 @@
 .product__details{
     &-item{
         .product-img{
-            
             img{
                 text-align: center;
                 border: 1px solid #dcdcdc;
                 padding: 20px;
+                max-width: 826px;
             }
             
         }
