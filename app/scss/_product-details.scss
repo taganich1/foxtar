@@ -233,6 +233,116 @@
             }
         }
     }
+    &__author{   
+    border: 1px solid $border;
+    background-color: #fff;
+    padding: 0px 30px 20px;
+    margin-bottom: 30px;
+    &__title{
+        font-family: $roboto;
+        color: $fon;
+        font-size: 20px;
+        font-weight: 700;
+        border-bottom: 1px solid $border;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    .author-profile-title{        
+        float: right;
+        font-size: 18px;
+        font-family: $roboto;
+        color: $fon;
+        margin-right: 35px;
+
+    }
+    .author-profile__btn{
+        a{
+            float: right;
+            margin-top: -34px;
+            border-radius: 0;
+            border: 1px solid #d5d5d5;
+            height: 25px;
+            background-color: #fff;
+            outline: none;
+            width: 90px;
+            line-height: 23px;
+            font-size: 13px;
+            font-family: $roboto;
+            color: #70838d;
+            text-align: center;
+            margin-right: 20px;
+        }
+    }
+    .author-profile__icons{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+        }
+
+
 }
 
+.product__sales{   
+    border: 1px solid $border;
+    background-color: #fff;
+    width: 255px;
+    margin-bottom: 30px;
+    &-number{
+        float: left;
+        padding-left: 65px;
+        font-size: 20px;
+        font-weight: 500;
+        color: $fon;
+        line-height: 60px;
+        position: relative;
+        &:before{
+            content:"\f07a" ;
+            font-family: "icomoon";
+            position: absolute;
+            left: 30px;
+            line-height: 58px;
+            color: #a6b5bb;
+        }
+    }
+    &-title{
+        padding-left: 105px;
+        font-family: $roboto;
+        color: #707070;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 62px;
+    }
+    
 
+}
+
+.product__information{
+    border: 1px solid $border;
+    background-color: #fff;
+    padding: 0px 30px 20px;
+    margin-bottom: 30px;
+    &-title{
+        font-family: $roboto;
+        color: $fon;
+        font-size: 20px;
+        font-weight: 700;
+        border-bottom: 1px solid $border;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    &-item{
+        font-size: 14px;
+        line-height: 36px;
+        color: #70838d;
+        span{
+            color: black;
+            font-weight: 450;
+        }
+
+    }
+    }
+
+    .product__information__compatibility-browser{
+        line-height: 20px;
+    }
