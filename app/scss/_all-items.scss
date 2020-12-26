@@ -2,6 +2,58 @@
 
 .all-items{
     background-color: #f4f6f5;
+
+    &__sort{
+        background-color: #fff;
+        font-size: 14px;
+        color: #707070;
+        line-height: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px solid $border;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        button{
+            outline: none;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sort__item-title{
+            margin-left: -160px;
+        }
+
+        .sort-item__amount{
+            margin-left: -80px;
+        }
+
+    }
+
+    .sort-item__amount, .sort-item__up, .sort-item__theme{
+            .sort-button{
+                font-size: 14px;
+                color: #455a64;
+                line-height: 24px;
+                cursor: pointer;
+            }
+        }
+    
+    .sort-item__up{
+        button{
+            .sort__button{
+                
+                .icon-caret-up{
+                    
+                }
+        }
+            
+        
+        
+        
+    }    
+    
 }
 
 .breadcrumbs{
@@ -161,6 +213,11 @@
 
 .top-sellers__item{
     border-bottom: 1px solid $border;
+    p
+    a{
+        
+    }
+}
 }
 
 .item__title{
@@ -227,5 +284,39 @@
     &:last-child{
         margin-bottom: 0;
         border-bottom: none;
+    }
+}
+
+
+.sort-item__up{
+    button:before{
+        font-family: "icomoon";
+        content: "\f0d8";
+        position: absolute;
+        top: 18px;
+        left: 178px;
+        font-size: 18px;
+        color: #707070;
+    }
+}
+
+.sort-item__theme{
+    margin-right: -80px;
+    .sort-buttong{
+        color: $green;
+    }
+}
+
+
+
+.sort-item__down{
+    button:before{
+        font-family: "icomoon";
+        content: "\f0d7";
+        position: absolute;
+        top: 26px;
+        left: 178px;
+        font-size: 18px;
+        color: #707070;
     }
 }
