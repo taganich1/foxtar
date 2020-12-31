@@ -610,3 +610,32 @@
 .col-3{
     padding-left: 30px;
 }
+
+
+.breadcrumbs{
+    padding: 45px 0px 40px;
+}
+
+.breadcrumbs-item{
+    display: inline-block;
+    position: relative;
+    a{
+        color: #b0bec5;
+        line-height: 40px;
+    }
+    span{
+        color: $fon;
+    }
+    & + .breadcrumbs-item{
+        padding-left: 24px;
+        &:before{
+            content: '';
+            position: absolute;
+            background-color: $green;
+            width: 5px;
+            height: 1px;
+            top: 50%;
+            left: 8px;
+        }
+    }
+}

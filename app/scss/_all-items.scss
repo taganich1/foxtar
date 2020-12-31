@@ -115,6 +115,8 @@
     background-color: #fff;
     padding: 0px 30px 20px;
     margin-bottom: 30px;
+    width: 270px;
+    min-width: 270px;
 }
 
 .categories__title,
@@ -213,7 +215,7 @@
 
 .top-sellers__item{
     border-bottom: 1px solid $border;
-    p
+    padding: 0;
     a{
         
     }
@@ -319,4 +321,22 @@
         font-size: 18px;
         color: #707070;
     }
+}
+
+
+.cataloge{
+    padding-top: 30px;
+    &__item{
+        width: 270px;
+        max-width: 270px;
+        padding: 0 30px 30px 0;
+        border: 1px solid $border;
+        .item-img{
+            img{
+                width: 270px;
+            }
+            
+        }
+    }
+
 }
