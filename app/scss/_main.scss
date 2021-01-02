@@ -65,7 +65,7 @@
         border-left: none;
         width: 63px;
         height: 60px;
-        top: 23px;
+        top: -5px;
         left: -6px;
         &:before{
             content: "\f002";
@@ -281,4 +281,8 @@
         width: 370px;
     }
     
+}
+
+button.mixitup-control-active{
+    background-color: $green;
 }
