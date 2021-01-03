@@ -136,6 +136,16 @@
             &:hover{
                 cursor: pointer;
                 color: $green;
+                box-shadow:
+                1px 1px #b5b5b5,
+                2px 2px #b5b5b5,
+                3px 3px #b5b5b5,
+                4px 4px #b5b5b5,
+                5px 5px #b5b5b5,
+                6px 6px #b5b5b5,
+                7px 7px #b5b5b5;
+              -webkit-transform: translateX(-7px);
+              transform: translateX(-7px);
             }
             &:focus{
                 outline: none;
@@ -156,12 +166,15 @@
 }
 
 .tutorials__text{
+    a{
+        color: $fon;
+        font-size: 24px;
+        line-height: 60px;
+        font-weight: 600;
+    }
     text-align: center;
-    color: $fon;
-    font-size: 24px;
-    line-height: 60px;
-    font-weight: 600;
     padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .tutorials{
@@ -237,38 +250,140 @@
 .products-new{
     padding-top: 120px;
     background-color: #f4f6f5;
-}
-
-.products-new__title{
-    font-size: 36px;
+    padding-bottom: 50px;
+    &__title{
+        font-size: 36px;
     line-height: 60px;
     font-weight: 600;
     color: $fon;
     text-align: center;
     padding-bottom: 60px;
-}
-
-.products-new__btn{
-    text-align: center;
-    button{
-        font-size: 14px;
-        line-height: 40px;
-        color: $fon;
-        margin-left: 5px;
-        background-color: #fff;
-        font-weight: 500;
-        border: 1px solid #fff;
-        outline: none;
-        cursor: pointer;
-        padding-left: 25px;
-        padding-right: 25px;
-        &:nth-child(1){
+    }
+    &__btn{
+        text-align: center;
+        padding-bottom: 60px;
+        button{
+            font-size: 14px;
+            line-height: 40px;
+            color: $fon;
+            margin-left: 5px;
+            background-color: #fff;
+            font-weight: 500;
+            border: 1px solid #fff;
+            outline: none;
+            cursor: pointer;
             padding-left: 25px;
             padding-right: 25px;
+            &:nth-child(1){
+                padding-left: 25px;
+                padding-right: 25px;
+            }
         }
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    &__item{
+        width: 440px;
+        max-width: 440px;
+        background-color: #fff;
+        border: 1px solid $border;
+        margin-bottom: 30px;
+        position: relative;
+        
+        
+    }
 
+
+    &-title{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $border;
+    }
+    &-img{
+        img{
+            width: 439px;
+            padding-bottom: 20px;
+        }
+    }
+    &-name{
+        .author-name{
+            a{
+                font-size: 18px;
+                color: $fon;
+                font-weight: 450;
+                padding-left: 30px;
+                padding-bottom: 10px;
+            }   
+        }
+    }
+    .product-name{
+        a{
+            font-size: 14px;
+            color: $green;
+            font-weight: 450;
+            padding-left: 30px;
+            padding-bottom: 15px;
+            
+        }
+    }
+    &-price{
+        font-size: 20px;
+        color: $fon;
+        font-weight: 500;
+        padding-right: 30px;
+        padding-top: 10px;    
+    }
+    &-description{
+        display: flex;
+        .description__img{
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .description__name{
+            padding-left: 10px;
+            padding-top: 25px;
+            
+                a{
+                    font-size: 14px;
+                    font-weight: 450;
+                    color: #546e7a;
+                }
+            
+        }
+    }
+    &__orders{
+        padding-left: 10px;
+        font-size: 12px;
+        padding-top: 24px;
+        span{
+            color: $fon;
+            font-weight: 450;
+        }
+    }
+    &__rating{
+        padding-left: 170px;
+        padding-top: 24px;
     }
 }
+
+.product-trend{
+    padding-top: 110px;
+    padding-bottom: 110px;
+    &__title{
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        color: $fon;
+        line-height: 60px;
+        padding-bottom: 50px;
+    }
+}
+
 
 
 .tutorials__item{
@@ -284,5 +399,78 @@
 }
 
 button.mixitup-control-active{
-    background-color: $green;
+    background-color: $orange;
+    color: #fff;
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    button{
+        height: 16px;
+        width: 16px;
+        background-color: #e8e8e8;
+        border-radius: 50%;
+        display: inline-block;
+        text-transform: unset;
+        color: transparent;
+        outline: none;
+        border-top: 1px solid #b1b1b1;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+    }
+    li{
+        padding-right: 5px;
+        padding-top: 30px;
+    }
+    .slick-active{
+        button{
+            background-color: $green;
+        }
+    }
+}
+.slider__item{
+    outline: none;
+    a{
+        outline: none;
+    }
+    .product-name{
+        a{
+            color: $green;
+            padding-left: 30px;
+            font-size: 14px;
+            font-weight: 450;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+
+.product-trend{
+    .slider__item{
+        position: relative;
+        &:after{
+            content: "\f0e7";
+            font-family: "icomoon";
+            font-size: 18px;
+            color: #fff;
+            top: 10px;
+            left: 15px;
+            position: absolute;
+        }
+        .products-new-img{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    border-style: solid;
+                    border-width: 35px; /* размер и форма */ 
+                    border-color: $green transparent transparent $green;  /* red — цвет */ 
+                    top: -1px;
+                }
+        
+        }
+}
 }

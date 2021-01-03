@@ -12,7 +12,7 @@
         padding-bottom: 20px;
         border: 1px solid $border;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
         position: relative;
         button{
             outline: none;
@@ -22,11 +22,12 @@
         }
 
         .sort__item-title{
-            margin-left: -160px;
+            padding-left: 10px;
+            margin-top: 1px;
         }
 
         .sort-item__amount{
-            margin-left: -80px;
+            padding-left: 20px;
         }
 
     }
@@ -42,6 +43,7 @@
     
     .sort-item__up{
         button{
+            
             .sort__button{
                 
                 .icon-caret-up{
@@ -55,6 +57,9 @@
     }    
     
 }
+
+
+
 
 .breadcrumbs{
     padding: 45px 0px 40px;
@@ -153,6 +158,9 @@
         color: $green;
         font-family: "icomoon";
     }
+    &:hover{
+        color: $green;
+    }
 }
 
 .categories__number{
@@ -201,6 +209,8 @@
     padding: 10px 0;
     line-height: 20px;
     text-align: center;
+    outline: none;
+    cursor: pointer;
     span{
         padding-left: 25px;
         position: relative;
@@ -210,6 +220,12 @@
             position: absolute;
             left: 0;
         }
+    }
+    &:hover{
+        font-size: 17px;
+    }
+    & span:hover:before{
+        font-size: 18px;
     }
 }
 
@@ -298,16 +314,71 @@
 
 
 .sort-item__up{
-    button:before{
+    button{
+    &:before{
         font-family: "icomoon";
         content: "\f0d8";
         position: absolute;
         top: 18px;
-        left: 178px;
+        left: 190px;
         font-size: 18px;
         color: #707070;
     }
+    &:hover:before{
+        color: $green;
+        
+    }
 }
+}
+
+.sort-item__down{
+    button{
+        &:before{
+            font-family: "icomoon";
+            content: "\f0d7";
+            position: absolute;
+            top: 26px;
+            left: 190px;
+            font-size: 18px;
+            color: #707070;
+        }
+        &:hover:before{
+            color: $green;
+            
+        }
+    }
+}
+
+.sort-button{
+    cursor: pointer;
+    left: 100px;
+    icon-sort-amount-desc:hover{
+        color: $green;
+    }
+}
+
+.icon-th-large:before {
+    
+    padding-left: 560px;
+    color: $green;
+}
+
+
+.icon-th-list{
+    &:before{
+        color: #90a4ae;
+    }
+    &:hover:before{
+        color: $green;
+    }
+}
+
+.icon-sort-amount-desc{
+    &:hover:before{
+        color: $green;
+    }
+}
+
 
 .sort-item__theme{
     margin-right: -80px;
@@ -318,17 +389,6 @@
 
 
 
-.sort-item__down{
-    button:before{
-        font-family: "icomoon";
-        content: "\f0d7";
-        position: absolute;
-        top: 26px;
-        left: 178px;
-        font-size: 18px;
-        color: #707070;
-    }
-}
 
 
 .cataloge{
@@ -411,6 +471,11 @@
 }
 
 .title-description__name{
+    a{
+        font-size: 14px;
+        color: #546e7a;
+        font-weight: 450;
+    }
     padding-left: 10px;
 }
 

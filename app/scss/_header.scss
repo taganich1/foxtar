@@ -104,6 +104,48 @@
             color: #fff;
             font-size: 14px;
             font-weight: 500;
+            position: relative;
+            &:hover{
+                font-size: 16px;
+                color: $orange;
+                transition: all .9s;
+                color: transparent;    
+                color: transparent;    
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-image: linear-gradient(to right, blue, yellow);
+            }
         }
+          a::before {
+            content: '';
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            width: 0;
+            height: 4px;
+            background-color: yellow;
+            border-bottom: 4px solid blue;
+            transition: 1s;
+          }
+          a:hover::before {
+            width: 100%;
+          }
+          a::after {
+            content: '';
+            position: absolute;
+            bottom: 11px;
+            left: 0;
+            width: 0;
+            height: 4px;
+            background-color: yellow;
+            transition: 1s;
+          }
+          a:hover::after {
+            width: 100%;
+          }  
+        
     }
 }
+
+
+
