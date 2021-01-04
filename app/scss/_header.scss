@@ -22,6 +22,10 @@
         }
         a{
             color: #969cb4;
+            &:hover{
+                color: $green;
+                text-decoration: underline;
+            }
         }
     }
     &__items{
@@ -48,6 +52,8 @@
             background-color: $orange;
             padding-right: 14px;
             padding-left: 14px;
+            outline: none;
+            cursor: pointer;
         }
     }
     &__item--active{

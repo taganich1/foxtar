@@ -96,8 +96,12 @@
         a{
             color: #b0bec5;
             line-height: 40px;
+            &:hover{
+                color: $fon;
+            }
         }
         span{
+            cursor: default;
             color: $fon;
         }
         & + .breadcrumbs-item{
@@ -542,6 +546,9 @@
             font-size: 18px;
             line-height: 64px;
             font-weight: 450;
+            &:hover{
+                color: $green;
+            }
         } 
 }
 
@@ -558,7 +565,11 @@
             max-width: 270;
             background-color: #fff;
             margin-bottom: 30px;
-            
+            &:hover{
+                -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 8px 30px -1px rgba(0,0,0,0); 
+                box-shadow: 0px 10px 13px -7px #000000, 3px 8px 30px -1px rgba(0,0,0,0);
+                transition: 0.7s;
+            }
             &:nth-child(1){
                 margin-right: 22px;
             }
@@ -576,7 +587,8 @@
             border-bottom: 1px solid $border;
             border-right: 1px solid $border;
             width: 170px;
-            .cataloge__title-text a{
+            .cataloge__title-text 
+            a{
                 font-weight: 450;
                 font-size: 14px;
                 color: $fon;
@@ -584,6 +596,9 @@
                 padding-left: 22px;
                 padding-top: 20px;
                 line-height: 10px;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
             .cataloge-text{
                 font-size: 12px;
