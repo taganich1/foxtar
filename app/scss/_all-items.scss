@@ -1,8 +1,58 @@
 @import "vars";
 
+/*------------------------------------------------BANNER-------------------------------------------------------*/
+
+
+.details__banner-text{
+    font-family: $roboto;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+    padding-top: 30px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+}
+
+
+/*-----------------------------------------------BREADCRUMBS-------------------------------------------------*/
+
+.breadcrumbs{
+    padding: 45px 0px 40px;
+    &-item{
+        display: inline-block;
+        position: relative;
+        a{
+            color: #b0bec5;
+            line-height: 40px;
+        }
+        span{
+            color: $fon;
+        }
+        & + .breadcrumbs-item{
+            padding-left: 24px;
+            &:before{
+                content: '';
+                position: absolute;
+                background-color: $green;
+                width: 5px;
+                height: 1px;
+                top: 50%;
+                left: 8px;
+            }
+        }
+    }
+}
+
+
+
+/*------------------------------------------------ALL__ITEMS-------------------------------------------------------*/
+
+
 .all-items{
     background-color: #f4f6f5;
-
     &__sort{
         background-color: #fff;
         font-size: 14px;
@@ -20,18 +70,14 @@
             border: none;
             cursor: pointer;
         }
-
         .sort__item-title{
             padding-left: 10px;
             margin-top: 1px;
         }
-
         .sort-item__amount{
             padding-left: 20px;
         }
-
     }
-
     .sort-item__amount, .sort-item__up, .sort-item__theme{
             .sort-button{
                 font-size: 14px;
@@ -39,8 +85,7 @@
                 line-height: 24px;
                 cursor: pointer;
             }
-        }
-    
+        }  
     .sort-item__up{
         button{
             
@@ -49,70 +94,11 @@
                 .icon-caret-up{
                     
                 }
-        }
-            
-        
-        
-        
+        }        
     }    
     
 }
 
-
-
-
-.breadcrumbs{
-    padding: 45px 0px 40px;
-}
-
-.breadcrumbs-item{
-    display: inline-block;
-    position: relative;
-    a{
-        color: #b0bec5;
-        line-height: 40px;
-    }
-    span{
-        color: $fon;
-    }
-    & + .breadcrumbs-item{
-        padding-left: 24px;
-        &:before{
-            content: '';
-            position: absolute;
-            background-color: $green;
-            width: 5px;
-            height: 1px;
-            top: 50%;
-            left: 8px;
-        }
-    }
-}
-
-.pagination__item{
-    display: inline-block;
-    padding-bottom: 110px;
-    padding-top: 53px;
-    & + .pagination__item{
-        padding-left: 7px;
-    }
-    a{
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        color: $fon;
-        font-size: 16px;
-        background-color: #fff;
-        font-weight: 500;
-    }
-    .active{
-        background-color: $orange;
-        width: 40px;
-        height: 40px;
-        color: #fff;
-    }
-}
 
 .categories,
 .price-range,
@@ -167,35 +153,37 @@
     color: $text;    
 }
 
-.price-range__slider{
-    .irs--round .irs-bar{
-        background-color: $fon;
+
+
+
+/*-----------------------------------------------PAGINATION-------------------------------------------------*/
+
+
+.pagination__item{
+    display: inline-block;
+    padding-bottom: 110px;
+    padding-top: 53px;
+    & + .pagination__item{
+        padding-left: 7px;
     }
-    .irs--round .irs-line{
-        background-color: $border;
-        color: $green;
+    a{
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        color: $fon;
+        font-size: 16px;
+        background-color: #fff;
+        font-weight: 500;
     }
-    .irs--round .irs-handle{
-        width: 16px;
-        height: 16px;
-        border-color: $green;
-        top: 30px;
+    .active{
+        background-color: $orange;
+        width: 40px;
+        height: 40px;
+        color: #fff;
     }
-    .irs-from, .irs-to, .irs-single{
-        top: 60px;
-        background-color: transparent;
-        border: none;
-        color: $text;
-        font-size: 15px;
-        &:before{
-            display: none;
-        }
-    }
-    .irs-min, .irs-max{
-        display: none;
-    }
-    
 }
+
 
 .price-range__btn,
 .top-sellers__btn{
@@ -229,12 +217,9 @@
     }
 }
 
-
 .top-sellers__btn{
     margin-top: 20px;
 }
-
-
 
 .top-sellers__item{
     border-bottom: 1px solid $border;
@@ -303,7 +288,6 @@
     }
 }
 
-
 .top-sellers__item{
     margin-top: 25px;
     &:last-child{
@@ -311,7 +295,6 @@
         border-bottom: none;
     }
 }
-
 
 .sort-item__up{
     button{
@@ -363,7 +346,6 @@
     color: $green;
 }
 
-
 .icon-th-list{
     &:before{
         color: #90a4ae;
@@ -379,7 +361,6 @@
     }
 }
 
-
 .sort-item__theme{
     margin-right: -80px;
     .sort-buttong{
@@ -389,6 +370,41 @@
 
 
 
+/*-----------------------------------------------PRICE-RANGE__SLIDER-------------------------------------------------*/
+
+
+.price-range__slider{
+    .irs--round .irs-bar{
+        background-color: $fon;
+    }
+    .irs--round .irs-line{
+        background-color: $border;
+        color: $green;
+    }
+    .irs--round .irs-handle{
+        width: 16px;
+        height: 16px;
+        border-color: $green;
+        top: 30px;
+    }
+    .irs-from, .irs-to, .irs-single{
+        top: 60px;
+        background-color: transparent;
+        border: none;
+        color: $text;
+        font-size: 15px;
+        &:before{
+            display: none;
+        }
+    }
+    .irs-min, .irs-max{
+        display: none;
+    }
+    
+}
+
+
+/*-------------------------------------------------CATALOGE----------------------------------------------------*/
 
 
 .cataloge{
@@ -453,9 +469,7 @@
             }
             
         }
-
     }
-
 }
 
 .title-description__img{

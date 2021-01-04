@@ -1,6 +1,6 @@
 @import "vars";
 
-/*-----------------------------------BANNER-----------------------------*/
+/*------------------------------------------------BANNER-------------------------------------------------------*/
 
 
 .details__banner{
@@ -84,11 +84,12 @@
     
 }
 
-/*-----------------------------------BREADCRUMBS-----------------------------*/
+/*-----------------------------------------------BREADCRUMBS-------------------------------------------------*/
 
 
 .breadcrumbs{
     padding: 45px 0px 40px;
+    background-color: #f4f6f5;
     &-item{
         display: inline-block;
         position: relative;
@@ -115,7 +116,8 @@
 }
 
 
-/*-----------------------------------PRODUCT__DETAILS-----------------------------*/
+/*----------------------------------------------------PRODUCT__DETAILS------------------------------------------------------*/
+
 
 .product__details{
     background-color: #f4f6f5;
@@ -149,17 +151,15 @@
     font-size: 16px;
     line-height: 24px;
     padding-top: 30px;
-    }
-
-    
+        }   
 }
+
 
 .product{
     border: 1px solid $border;
     background-color: #fff;
     padding: 0px 30px 20px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;   
     &__title{
         font-family: $roboto;
         color: $fon;
@@ -176,7 +176,6 @@
         font-family: $roboto;
         padding-bottom: 50px;
     }
-
     &__btn__preview button{
         border: 1px solid $border;
         opacity: none;
@@ -215,7 +214,6 @@
             font-weight: 500;
         }
     }
-
     &__btn__doc button{
         background-color: #000;
         border: 1px solid $border;
@@ -236,12 +234,10 @@
             font-weight: 500;
         }
     }
-
     &__view{
         display: flex;
         justify-content: space-between;
-    }
-    
+    }   
     &__social{
         margin-bottom: 57px;
         padding-left: 20px;
@@ -287,35 +283,6 @@
         }
     }
 
-    .jq-selectbox{
-        width: 100%;
-    }
-
-    .jq-selectbox__select{
-        border-radius: 0;
-        border: 1px solid #d5d5d5;
-        height: 30px;
-        background: #fff;
-        outline: none;
-        width: 85px;
-        box-shadow: none;
-    }
-    .jq-selectbox__select-text{
-        line-height: 30px;
-        font-size: 13px;
-        font-family: $roboto;
-        color: #70838d;
-        overflow: visible;
-    }
-    .jq-selectbox__trigger{
-        line-height: 30px;
-        border-left: none;
-    }
-    .jq-selectbox__trigger-arrow{
-        top: 13px;
-        border-top: 5px solid #8bc34a;
-        right: 6px;
-    }
     &__item{
         display: flex;
         justify-content: space-between;
@@ -346,7 +313,7 @@
                 text-align: center;
                 outline: none;
                 &:hover{
-                    font-size: 0;
+                    
                     
                 }
                 &:before{
@@ -356,16 +323,15 @@
                     
                 }     
                 &:hover:before{
-                    font-size: 25px;
+                    font-size: 20px;
                     padding-left: 20px;
-                    color: #fff;
                     transition: 1s;
+                    color: $orange;
                     
                 }
             }
         }
         
-
 
 
         .product__btn__favorite{
@@ -394,13 +360,12 @@
                     left: 30px;
                 }
                 &:hover:before{   
-                    color: #000; 
+                    color: #fff; 
                     transition: 1s;
                 }
                 &:hover{
                     background-color: $orange;
                     transition: 1s;
-                      
                 }
             }
             
@@ -457,14 +422,12 @@
         font-family: $roboto;
         color: $fon;
         margin-right: 50px;
-
     }
     .author-profile__btn{
         a{
             &:hover{
-                color: #000;
-                font-size: 14px;
-                font-weight: 450;
+                color: $fon;
+                font-weight: 500;
             }
             float: right;
             margin-top: -33px;
@@ -489,9 +452,11 @@
         
     }
         }
-
-
 }
+
+
+/*----------------------------------------------------PRODUCT__SALES------------------------------------------------------*/
+
 
 .product__sales{   
     border: 1px solid $border;
@@ -527,6 +492,11 @@
 
 }
 
+
+/*----------------------------------------------------PRODUCT__INFORMATION------------------------------------------------------*/
+
+
+
 .product__information{
     border: 1px solid $border;
     background-color: #fff;
@@ -550,77 +520,17 @@
             color: black;
             font-weight: 450;
         }
-
     }
-    }
-
-    .product__information__compatibility-browser{
+    &__compatibility-browser{
         line-height: 20px;
     }
+}
 
 
-    .tabs{
-        display: flex;
-        justify-content: space-around;
-        .tab{
-            width: 225px;
-            height: 60px;
-            border: 1px solid $border;
-            text-align: center;
-            line-height: 60px;
-            cursor: pointer;
-        }
-        
-    }
-    .tab-text{
-        height: 265px;
-        border: 1px solid $border;
-        padding-top: 40px;
-        display: flex;
-        .tab-text__left{
-            padding-left: 55px;
-        }
-        .tab-text__right{
-            padding-left: 55px;
-        }
-        li{
-            line-height: 36px;
-            font-size: 16px;
-            color: #707070;
-            position: relative;
-            &::before{
-                content: "\f105";
-                font-family: "icomoon";
-                position: absolute;
-                left: -15px;  
-                color: $green;
-                top: -1px;  
-            }
-        }
+/*----------------------------------------------------PRODUCT__ABOUT---------------------------------------------------------*/
 
-    }
 
-    .tabs__wrapper .active {
-        color: #000;
-        font-weight: 450;
-        border-bottom: 3px solid $green;
-      }
-      
-      .tabs__wrapper .tab-item {
-        display: none;
-      }
-      
-      .tabs__wrapper .tab-item:first-child {
-        display: block;
-      }
-      
-      .tabs__wrapper{
-          margin-bottom: 50px;
-          background-color: #fff;
-          width: 100%;
-      }
-
-      .product__about {
+.product__about {
         border: 1px solid $border;
         background-color: #fff;
         padding-left: 30px;
@@ -633,15 +543,14 @@
             line-height: 64px;
             font-weight: 450;
         } 
-      }
+}
 
-      .breadcrumbs{
-          background-color: #f4f6f5;
-      }
+
+
+/*----------------------------------------------------PRODUCT__CATALOGE---------------------------------------------------------*/
 
     .product__cataloge{
-        display: flex;
-        
+        display: flex;        
         &-item{
             display: flex;
             width: 270px;
@@ -682,9 +591,7 @@
                 font-weight: 400;
                 padding-left: 22px;
                 line-height: 20px;
-
             }
-
             .cataloge__item-price{
                 font-size: 18px;
                 font-weight: 500;
@@ -697,35 +604,141 @@
         }
     }
 
+
+
+
+/*-------------------------------------------------JQ_SELECT-----------------------------------------------------------*/
+
+
+.jq-selectbox{
+    width: 100%;
+    &__select{
+    border-radius: 0;
+    border: 1px solid #d5d5d5;
+    height: 30px;
+    background: #fff;
+    outline: none;
+    width: 85px;
+    box-shadow: none;
+    }
+    &__select-text{
+    line-height: 30px;
+    font-size: 13px;
+    font-family: $roboto;
+    color: #70838d;
+    overflow: visible;
+    }
+    &__trigger{
+    line-height: 30px;
+    border-left: none;
+    }
+    &__trigger-arrow{
+    top: 13px;
+    border-top: 5px solid #8bc34a;
+    right: 6px;
+}
+}
+
+
+/*-------------------------------------------BOOTSTRAP-------------------------------------------*/
+
+
 .col-3{
     padding-left: 30px;
 }
 
 
-.breadcrumbs{
-    padding: 45px 0px 40px;
+/*---------------------------------------------TAB------------------------------------------------*/
+
+
+
+.tabs__wrapper{
+    margin-bottom: 50px;
+    background-color: #fff;
+    width: 100%;
 }
 
-.breadcrumbs-item{
-    display: inline-block;
-    position: relative;
-    a{
-        color: #b0bec5;
-        line-height: 40px;
+.tabs__wrapper .active {
+    color: #000;
+    font-weight: 450;
+    border-bottom: 3px solid $green;
+}
+
+.tabs__wrapper .tab-item {
+    display: none;
+}
+
+.tabs__wrapper .tab-item:first-child {
+    display: block;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    .tab{
+        width: 225px;
+        height: 60px;
+        border: 1px solid $border;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        &-text{
+            height: 265px;
+            border: 1px solid $border;
+            padding-top: 40px;
+            display: flex;
+            &__left{
+                padding-left: 55px;
+            }
+            &__right{
+                padding-left: 55px;
+            }
+            li{
+                line-height: 36px;
+                font-size: 16px;
+                color: #707070;
+                position: relative;
+                &::before{
+                    content: "\f105";
+                    font-family: "icomoon";
+                    position: absolute;
+                    left: -15px;  
+                    color: $green;
+                    top: -1px;  
+                }
+            }
+        
+        }
     }
-    span{
-        color: $fon;
+    
+}
+
+.tab-text{
+    height: 265px;
+    border: 1px solid $border;
+    padding-top: 40px;
+    display: flex;
+    .tab-text__left{
+        padding-left: 55px;
     }
-    & + .breadcrumbs-item{
-        padding-left: 24px;
-        &:before{
-            content: '';
+    .tab-text__right{
+        padding-left: 55px;
+    }
+    li{
+        line-height: 36px;
+        font-size: 16px;
+        color: #707070;
+        position: relative;
+        &::before{
+            content: "\f105";
+            font-family: "icomoon";
             position: absolute;
-            background-color: $green;
-            width: 5px;
-            height: 1px;
-            top: 50%;
-            left: 8px;
+            left: -15px;  
+            color: $green;
+            top: -1px;  
         }
     }
 }
+
+
+
