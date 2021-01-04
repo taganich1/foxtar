@@ -1,2 +1,87 @@
 @import "vars";
 
+@media (max-width:1212px){
+    .product-img{
+        img{
+            width: 720px;
+        }
+        
+    }
+}
+
+
+@media (max-width:990px){
+    .product-img{
+        img{
+            width: 540px;
+        }
+        
+    }
+}
+
+
+@media (max-width:767px){
+    .product-img{
+        img{
+            width: 405px;
+        }
+        
+    }
+    .details__banner-search{
+        input{
+            width: 500px;
+        }
+    }
+    button .details__banner-btn{
+        top: 200px;
+        button{
+            top: -90px;
+        }
+        
+    }
+}
+
+
+
+@media (max-width:776px){
+    .header__top{
+        .container{
+            
+        }
+    }
+    .header__phone{
+        font-size: 14px;
+        margin-right: 10px;
+        padding-left: 20px;
+    }
+    .header__logo{
+        img{
+            width: 100px;
+        }
+    }
+    .header__btn{
+        button{
+            margin-top: 10px;
+        }
+    }
+    .header__inner{
+        
+    }
+}
+
+@media (max-width:468px){
+    .header__phone{
+        font-size: 12px;
+        margin-right: 10px;
+        padding-left: 20px;
+    }
+}
+
+
+@media (max-width:468px){
+    .header__phone{
+        font-size: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+    }
+}

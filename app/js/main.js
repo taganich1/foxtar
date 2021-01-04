@@ -27,5 +27,9 @@ $(function(){
             $(".tabs__wrapper .tab-item").hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass("active");
 
+    $('.menu__btn').click(function(){
+        $('.menu ul').slideToggle();
+    })
+
 });
 
