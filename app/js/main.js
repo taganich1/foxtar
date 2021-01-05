@@ -8,5 +8,28 @@ $(function(){
         prefix:"$",
         skin:"round"
     });
+
+    $('input, select').styler();
+    
+    var mixer = mixitup('.products-new__container');
+
+    $('.slider__wrapper').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots:true,
+        arrows:false
+    });
+
+    $(" .tabs__wrapper .tab").click(function() {
+        $(".tabs__wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+            $(".tabs__wrapper .tab-item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
+
+    $('.menu__btn').click(function(){
+        $('.menu ul').slideToggle();
+    })
+
 });
 

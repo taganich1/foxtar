@@ -1,45 +1,164 @@
 @import "vars";
 
+
 .footer{
     background-color: $fon;
-}
-
-.footer__content{
-    padding: 100px 0;
-    border-bottom: 1px solid #424d53 ;
-}
-
-.footer__copy{
-    padding: 30px 0;
-    text-align: center;
-}
-
-.footer__copy-text{
-    line-height: 36px;
-    color: #919699;
-}
-
-.footer__title{
-    color: #ffffff;
-    font-size: 22px;
-    font-family: $ral;
-    padding-bottom: 30px;
-    margin-bottom: 35px;
-    position: relative;
-    &:after{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background-color: $green;
-        height: 3px;
-        width: 50px;
+    &__content{
+        padding: 100px 0;
+        border-bottom: 1px solid #424d53;
+    }
+    &__copy{
+        padding: 30px 0;
+        text-align: center;
+    }
+    &__copy-text{
+        line-height: 36px;
+        color: #919699;
+    }
+    &__title{
+        color: #ffffff;
+        font-size: 22px;
+        font-family: $ral;
+        padding-bottom: 30px;
+        margin-bottom: 35px;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: $green;
+            height: 3px;
+            width: 50px;
+        }
+    }
+    &__text{
+        margin-bottom: 25px;
+    }  
+    &__adress:before{
+        content: "\f041";
+    }
+    &__phone{
+        margin-top: 20px;
+        &:hover{
+            color: $green
+        }
+        &:before{
+        content: "\f095";
+        display: block;
+    }
+    }
+    &__list{
+        li{
+            margin-bottom: 10px;
+        }
+        a{
+            line-height: 36px;
+            padding-left: 21px;
+            color: $text;
+            position: relative;
+            &:before{
+                content: "\f105";
+                position: absolute;
+                left: 0;
+                font-family: 'icomoon';
+                color: $green;
+                font-size: 18px;
+                line-height: 33px;
+            }
+            &:hover{
+                color: $green;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__form-title{
+        font-size: 20px;
+        line-height: 36px;
+        color: #fff;
+        margin-bottom: 8px;
+        padding-top: 30px;
+    }
+    &__form{
+        input{
+            line-height: 40px;
+            height: 40px;
+            width: 210px;
+            padding: 0px 15px;
+            background-color: #2f3c43;
+            outline: none;
+            border: 1px solid #000101;
+            border-bottom: 1px solid #253136;
+            border-right: none;
+            color: #fff; 
+        }
+        button{
+            border: 1px solid #000101;
+            border-bottom: 1px solid #253136;
+            border-left: none;
+            opacity: none;
+            background-color: $green;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            top: -40px;
+            left: 170px;
+            &:hover:before{
+                font-size: 25px;
+                transition: 0.2s;
+            }
+            &:before{
+                content: "\f124";
+                font-family: 'icomoon';
+                position: absolute;
+                font-size: 20px;
+                color: #fff;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+        &:focus{
+            outline: none;
+        }    
+        }
+    }
+    &__social{
+        &-item{
+            display: inline-block;
+            & + li{
+                margin-left: 7px;
+            }
+            
+            .facebook{
+                background-position: 0px 0px;
+            }
+        }
     }
 }
 
-.footer__text{
-    margin-bottom: 25px;
-}
+
+.footer__adress,
+.footer__phone{
+    font-size: 14px;
+    color: #ffffff;
+    font-family: $lato;
+    padding-left: 30px;
+    position: relative;
+    &:hover:before{
+        left: 5px;
+        font-size: 20px;
+    }
+    &:before{
+        content: "";
+        color: $green;
+        font-family: "icomoon";
+        position: absolute;
+        left: 0;
+        top: 0;
+        }
+    }
+
 
 .footer__adress,
 .footer__phone{
@@ -69,81 +188,8 @@
 }
 }
 
-.footer__list{
-    li{
-        margin-bottom: 10px;
-    }
-    a{
-        line-height: 36px;
-        padding-left: 21px;
-        color: $text;
-        position: relative;
-        &:before{
-            content: "\f105";
-            position: absolute;
-            left: 0;
-            font-family: 'icomoon';
-            color: $green;
-            font-size: 18px;
-            line-height: 33px;
-        }
-    }
-}
 
-.footer__form-title{
-    font-size: 20px;
-    line-height: 36px;
-    color: #fff;
-    margin-bottom: 8px;
-
-}
-
-.footer__form{
-    input{
-        line-height: 40px;
-        height: 40px;
-        width: 210px;
-        padding: 0px 15px;
-        background-color: #2f3c43;
-        outline: none;
-        border: 1px solid #000101;
-        border-bottom: 1px solid #253136;
-        border-right: none;
-        color: #fff;
-    }
-    button{
-        border: 1px solid #000101;
-        border-bottom: 1px solid #253136;
-        border-left: none;
-        opacity: none;
-        background-color: $green;
-        position: relative;
-        width: 40px;
-        height: 40px;
-        top: 13px;
-        left: -2px;
-        &:before{
-            content: "\f124";
-            font-family: 'icomoon';
-            position: absolute;
-            font-size: 20px;
-            color: #fff;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            cursor: pointer;
-        }
-    }
-}
-
-.footer__social{
-    li{
-        display: inline-block;
-        & + li{
-            margin-left: 7px;
-        }
-    }
-}
+/*-------------------------------------------BOOTSTRAP-------------------------------------------------------------*/
 
 .all-items{
     .container{
@@ -155,3 +201,6 @@
         padding-right: 0;
     }
 }
+
+
+

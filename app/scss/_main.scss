@@ -1,0 +1,527 @@
+@import "vars";
+
+
+
+/*-----------------------------------------------------BANNER-----------------------------------------------------------*/
+
+
+.banner{
+    background-image: url(/img/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 530px;
+    &__title{
+        font-family: $roboto;
+        font-size: 48px;
+        font-weight: 600;
+        padding-top: 130px;
+        color: #fff;
+        text-align: center;
+        line-height: 42px;
+    }
+    &__text{
+        font-family: $roboto;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+        line-height: 30px;
+        padding-top: 30px;
+    }
+    &__search{
+        text-align: center;
+        padding-top: 55px;
+        input[type='search']::-webkit-search-decoration, 
+        input[type='search']::-webkit-search-cancel-button, 
+        input[type='search']::-webkit-search-results-button, 
+        input[type='search']::-webkit-search-results-decoration {
+            display: none;
+    }
+        input{
+            line-height: 60px;
+            height: 60px;
+            width: 610px;
+            padding: 0px 25px;
+            background-color: #fff;
+            outline: none;
+            border: 1px solid #98a38b;
+            color: #90a4ae;
+            border-radius: 2px;
+            border-right: none;
+            &::placeholder{
+                font-family: $roboto;
+                font-size: 14px;
+                line-height: 30px;
+                font-weight: 500;
+                color: #90a4ae;
+                
+            }
+        }
+        button{
+            border: 1px solid #98a38b;
+            background-color: #fff;
+            border-radius: 2px;
+            position: relative;
+            border-left: none;
+            width: 63px;
+            height: 60px;
+            top: -5px;
+            left: -6px;
+            &:before{
+                content: "\f002";
+                font-family: 'icomoon';
+                position: absolute;
+                font-size: 20px;
+                color: #78909c;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+            &:hover{
+                &:before{
+                    font-size: 25px;
+                }
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+}
+
+
+
+/*------------------------------------------------------------MAIN-------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------PARTNERSHIP-----------------------------------------------------------*/
+
+.partnership{
+    background-color: #f4f6f5;
+    padding-top: 130px;
+    padding-bottom: 140px;
+    &__wrapper{
+        background-color:#b5b5b5;
+        height: 440px;
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 110px;
+        margin-bottom: 180px;
+        position: relative;
+    }
+    &__inner{
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: $green;
+        text-align: center;
+        padding-top: 80px;
+        height: 220px;
+        width: 660px;
+        position: absolute;
+        top: 110px;
+        left: 165px;
+        }
+        &__title{
+            font-weight: 400;
+            font-size: 30px;
+            color: #fff;
+            line-height: 36px;
+            span{
+                font-weight: 600;
+            }
+        }
+        &__btn{
+            border: 1px solid #98a38b;
+            background-color: #fff;
+            border-radius: 2px;
+            border-left: none;
+            width: 220px;
+            height: 60px;
+            margin-left: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            &:hover{
+                cursor: pointer;
+                color: $green;
+                box-shadow:
+                1px 1px #b5b5b5,
+                2px 2px #b5b5b5,
+                3px 3px #b5b5b5,
+                4px 4px #b5b5b5,
+                5px 5px #b5b5b5,
+                6px 6px #b5b5b5,
+                7px 7px #b5b5b5;
+                -webkit-transform: translateX(-7px);
+                transform: translateX(-7px);
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+}
+
+
+/*-----------------------------------------------------TUTORIALS-----------------------------------------------------------*/
+
+
+.tutorials{
+    padding-top: 120px;
+    padding-bottom: 150px;
+    background-color: #fff;
+    &__title{
+        font-family: $roboto;
+        font-size: 36px;
+        line-height: 60px;
+        font-weight: 600;
+        color: $fon;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    &__text{
+        a{
+            color: $fon;
+            font-size: 24px;
+            line-height: 60px;
+            font-weight: 600;
+        }
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    &__item{
+        background-color: #f8f8f8;
+        width: 370px;
+        &:hover{
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 8px 30px -1px rgba(0,0,0,0); 
+            box-shadow: 0px 10px 13px -7px #000000, 3px 8px 30px -1px rgba(0,0,0,0);
+        }
+    }
+    &__img{
+        img{
+            width: 370px;
+        }
+        
+    }
+}
+
+
+/*-----------------------------------------------------STRENGTHS-----------------------------------------------------------*/
+
+
+.strengths{
+    &__wrapper{
+        background-color: $fon;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        &:nth-child(3){
+            padding-right: 0;
+        }
+    }
+    &__item{
+        text-align: center;
+        padding-right: 45px;
+    }
+    &__title{
+        text-align: center;
+        font-family: $roboto;
+        color: #fff;
+        font-size: 36px;
+        line-height: 60px;
+        font-weight: 600;
+        padding-bottom: 120px;
+        
+    }
+    &__img{
+        
+        padding-bottom: 30px;
+    }
+    &__title-text{
+        font-family: $roboto;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 60px;
+        color: #fff;   
+        span{
+            color: $green;
+        }
+    }
+    &__text{
+        font-family: $roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+}
+
+
+/*-----------------------------------------------------PRODUCT-NEW-----------------------------------------------------------*/
+
+
+.products-new{
+    padding-top: 120px;
+    background-color: #f4f6f5;
+    padding-bottom: 50px;
+    &__title{
+        font-size: 36px;
+    line-height: 60px;
+    font-weight: 600;
+    color: $fon;
+    text-align: center;
+    padding-bottom: 60px;
+    }
+    &__btn{
+        text-align: center;
+        padding-bottom: 60px;
+        button{
+            font-size: 14px;
+            line-height: 40px;
+            color: $fon;
+            margin-left: 5px;
+            background-color: #fff;
+            font-weight: 500;
+            border: 1px solid #fff;
+            outline: none;
+            cursor: pointer;
+            padding-left: 25px;
+            padding-right: 25px;
+            &:nth-child(1){
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;       
+    }
+    &__item{
+        width: 440px;
+        max-width: 440px;
+        background-color: #fff;
+        border: 1px solid $border;
+        margin-bottom: 30px;
+        position: relative;
+        &:hover{
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 8px 30px -1px rgba(0,0,0,0); 
+            box-shadow: 0px 10px 13px -7px #000000, 3px 8px 30px -1px rgba(0,0,0,0);
+        }
+    }
+    &-title{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $border;
+    }
+    &-img{
+        img{
+            width: 439px;
+            padding-bottom: 20px;
+        }
+    }
+    &-name{
+        .author-name{
+            a{
+                font-size: 18px;
+                color: $fon;
+                font-weight: 450;
+                padding-left: 30px;
+                padding-bottom: 10px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }   
+        }
+    }
+    .product-name{
+        a{
+            font-size: 14px;
+            color: $green;
+            font-weight: 450;
+            padding-left: 30px;
+            padding-bottom: 15px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &-price{
+        font-size: 20px;
+        color: $fon;
+        font-weight: 500;
+        padding-right: 30px;
+        padding-top: 10px;    
+    }
+    &-description{
+        display: flex;
+        .description__img{
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .description__name{
+            padding-left: 10px;
+            padding-top: 25px;
+                a{
+                    font-size: 14px;
+                    font-weight: 450;
+                    color: #546e7a;
+                    &:hover{
+                        color: #000;
+                        text-decoration: underline;
+                    }
+                }
+            
+        }
+    }
+    &__orders{
+        padding-left: 10px;
+        font-size: 12px;
+        padding-top: 24px;
+        span{
+            color: $fon;
+            font-weight: 450;
+        }
+    }
+    &__rating{
+        padding-left: 170px;
+        padding-top: 24px;
+    }
+}
+
+
+
+/*-----------------------------------------------------PRODUCT-TREND-----------------------------------------------------------*/
+
+
+
+.product-trend{
+    padding-top: 110px;
+    padding-bottom: 110px;
+    &__title{
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        color: $fon;
+        line-height: 60px;
+        padding-bottom: 50px;
+    }
+}
+
+
+
+.product-trend{
+    .slider__item{
+        position: relative;
+        &:after{
+            content: "\f0e7";
+            font-family: "icomoon";
+            font-size: 18px;
+            color: #fff;
+            top: 10px;
+            left: 15px;
+            position: absolute;
+        }
+        .products-new-img{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    border-style: solid;
+                    border-width: 35px; 
+                    border-color: $green transparent transparent $green;  
+                    top: -1px;
+                }
+        
+        }
+}
+}
+
+
+/*-----------------------------------------------------TOP-SELLERS-----------------------------------------------------------*/
+
+
+.top-sellers__item{
+    max-width: 300px;
+    padding-left: 30px;
+}
+
+
+
+/*-----------------------------------------------------SLICK__SLIDER----------------------------------------------------------*/
+
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    button{
+        height: 16px;
+        width: 16px;
+        background-color: #e8e8e8;
+        border-radius: 50%;
+        display: inline-block;
+        text-transform: unset;
+        color: transparent;
+        outline: none;
+        border-top: 1px solid #b1b1b1;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+    }
+    li{
+        padding-right: 5px;
+        padding-top: 30px;
+    }
+    .slick-active{
+        button{
+            background-color: $green;
+        }
+    }
+}
+
+
+.slider__item{
+    outline: none;
+    a{
+        outline: none;
+    }
+    .product-name{
+        a{
+            color: $green;
+            padding-left: 30px;
+            font-size: 14px;
+            font-weight: 450;
+            padding-bottom: 15px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+
+/*-----------------------------------------------------MIXITUP-----------------------------------------------------------*/
+
+
+
+button.mixitup-control-active{
+    background-color: $orange;
+    color: #fff;
+}
+
+
+/*-----------------------------------------------------BOOTSTRAP-----------------------------------------------------------*/
+
+
+.col-sm-4:nth-last-child(3){
+    padding-right: 0px;
+}
