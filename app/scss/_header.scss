@@ -12,6 +12,10 @@
         height: 34px;
         background-color: #f5f5f5;
         border-radius: 50%;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid $green;
+        }
     }
     &__phone{
         margin-left: auto;

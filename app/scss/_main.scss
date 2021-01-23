@@ -81,7 +81,7 @@
             }
             &:hover{
                 &:before{
-                    font-size: 25px;
+                    color: $green;
                 }
             }
             &:focus{
@@ -143,6 +143,7 @@
             margin-left: 50px;
             font-size: 18px;
             font-weight: 500;
+            transition: all 1s;
             &:hover{
                 cursor: pointer;
                 color: $green;
@@ -156,6 +157,7 @@
                 7px 7px #b5b5b5;
                 -webkit-transform: translateX(-7px);
                 transform: translateX(-7px);
+                transition: all 1s;
             }
             &:focus{
                 outline: none;

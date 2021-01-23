@@ -11,7 +11,7 @@ $(function(){
 
     $('input, select').styler();
     
-    var mixer = mixitup('.products-new__container');
+    
 
     $('.slider__wrapper').slick({
         slidesToShow: 3,
@@ -30,6 +30,8 @@ $(function(){
     $('.menu__btn').click(function(){
         $('.menu ul').slideToggle();
     })
+
+    var mixer = mixitup('.products-new__container');
 
 });
 

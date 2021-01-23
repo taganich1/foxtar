@@ -217,10 +217,11 @@
         }
     }
     &:hover{
-        font-size: 17px;
+        background-color: $orange;
+        transition: all 0.7s;
     }
     & span:hover:before{
-        font-size: 18px;
+        
     }
 }
 
@@ -399,6 +400,7 @@
         height: 16px;
         border-color: $green;
         top: 30px;
+        cursor: pointer;
     }
     .irs-from, .irs-to, .irs-single{
         top: 60px;
