@@ -269,18 +269,18 @@
 .products-new{
     padding-top: 120px;
     background-color: #f4f6f5;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     &__title{
         font-size: 36px;
     line-height: 60px;
     font-weight: 600;
     color: $fon;
     text-align: center;
-    padding-bottom: 60px;
+    
     }
     &__btn{
         text-align: center;
-        padding-bottom: 60px;
+        padding-top: 50px;
         button{
             font-size: 14px;
             line-height: 40px;
@@ -302,7 +302,8 @@
     &__container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;       
+        justify-content: space-around;
+        padding-top: 60px;       
     }
     &__item{
         width: 440px;
@@ -324,6 +325,10 @@
     &-img{
         img{
             width: 439px;
+            max-width: 439px;
+            min-width: 439px;
+            max-height: 275.38px;
+            min-height: 275.38px;
             padding-bottom: 20px;
         }
     }
@@ -335,6 +340,9 @@
                 font-weight: 450;
                 padding-left: 30px;
                 padding-bottom: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width:300px;
                 &:hover{
                     text-decoration: underline;
                 }
@@ -374,6 +382,9 @@
                     font-size: 14px;
                     font-weight: 450;
                     color: #546e7a;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width:80px;
                     &:hover{
                         color: #000;
                         text-decoration: underline;
@@ -412,7 +423,7 @@
         font-size: 36px;
         color: $fon;
         line-height: 60px;
-        padding-bottom: 50px;
+        
     }
 }
 
@@ -421,6 +432,7 @@
 .product-trend{
     .slider__item{
         position: relative;
+        padding-top: 50px;
         &:after{
             content: "\f0e7";
             font-family: "icomoon";

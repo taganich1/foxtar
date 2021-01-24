@@ -135,7 +135,10 @@
                 background-color: #fff;
                 padding: 20px;
                 border: 1px solid #dcdcdc;
-                
+                max-width:855px;
+                min-width:855px;
+                max-height: 455.84px;
+                min-height: 455.84px;
             }
             
             
@@ -255,6 +258,9 @@
                 text-align: center;
                 padding-top: 20px;
                 font-size: 18px;
+                &:hover{
+                    
+                }
             }
             &:nth-child(2) a{
                 background-color: #64b5f6;
@@ -264,6 +270,9 @@
                 text-align: center;
                 padding-top: 20px;
                 font-size: 18px;
+                &:hover{
+                    
+                }
             }
             &:nth-child(3) a{
                 background-color: #4f71ce;
@@ -273,6 +282,9 @@
                 text-align: center;
                 padding-top: 20px;
                 font-size: 18px;
+                &:hover{
+                    
+                }
             }
             &:nth-child(4) a{
                 background-color: #d32f2f;
@@ -282,6 +294,9 @@
                 text-align: center;
                 padding-top: 20px;
                 font-size: 18px;
+                &:hover{
+                    
+                }
             }
             
         }
@@ -463,6 +478,8 @@
         img{
             max-width: 73px;
             min-width: 73px;
+            max-height: 63px;
+            min-height: 63px;
             margin-right: 15px;
         }
     }
@@ -595,6 +612,14 @@
                 margin-right: 22px;
             }
         }
+        .cataloge-img{
+            img{
+                max-width: 100px;
+                min-width: 100px;
+                max-height: 90px;
+                min-height: 90px;
+            }
+        }
         .cataloge-title{
             border-bottom: 1px solid $border;
             border-right: 1px solid $border;
@@ -618,6 +643,13 @@
                 font-weight: 400;
                 padding-left: 22px;
                 line-height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 160px;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
             .cataloge__item-price{
                 font-size: 18px;
@@ -689,7 +721,9 @@
     color: #000;
     font-weight: 450;
     border-bottom: 3px solid $green;
+    
 }
+
 
 .tabs__wrapper .tab-item {
     display: none;
