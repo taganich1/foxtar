@@ -141,6 +141,21 @@
             }  
             
         }
+        .menu__btn{
+            display: none;
+            button{
+                border: none;
+                outline: none;
+                &:after{
+                    content: "\f0c9";
+                    font-family: "icomoon";
+                    font-size: 25px;
+                    color: $green;
+                    margin-bottom: 24px;
+                }
+            }
+
+        }
     }
 }
 

@@ -85,3 +85,16 @@
         padding-left: 20px;
     }
 }
+
+
+@media (max-width: 768px){
+    .menu li a, ul{
+    display: none;
+    }
+    .menu__btn{
+        display: block !important;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        
+    }
+}
