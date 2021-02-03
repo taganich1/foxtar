@@ -88,13 +88,53 @@
 
 
 @media (max-width: 768px){
-    .menu li a, ul{
-    display: none;
+    .header__navigation{
+        padding-top: 20px;
+        padding-bottom: 20px;  
     }
     .menu__btn{
         display: block !important;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        
+        border: none;
+        outline: none;
+        background-color: $fon;   
     }
+        .menu ul{
+        display: none;
+        position: absolute;
+        top: 155px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: #ccc;
+    }
+        .menu li{
+            display: block;
+            width: 100%;
+            padding-left: 0px!important;
+            &:hover{
+                background-color: $border;
+            }
+            a{
+                line-height: 0px;
+            }
+        }
+        
+        .menu li +li {
+            padding-left: 0;
+        }
+
+        .menu a{
+            display: block; 
+            line-height: 10px;
+        }
+        .header__navigation li a {
+            line-height: 30px!important; 
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 0;
+        }
+    .banner__search input{
+        width: 400px;
+    }    
 }

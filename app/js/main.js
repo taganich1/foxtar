@@ -31,7 +31,7 @@ $(function(){
         $('.menu ul').slideToggle();
     })
 
-    var mixer = mixitup('.products-new__container');
+
 
 });
 

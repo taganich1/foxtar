@@ -103,56 +103,21 @@
                 font-weight: 500;
                 position: relative;
                 &:hover{
-                    color: $orange;
-                    transition: all .9s;
-                    color: transparent;    
-                    color: transparent;    
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    background-image: linear-gradient(to right, blue, yellow);
+                    color: $green;
+                    transition: all .7s;
                 }
             }
-            a::before {
-                content: '';
-                position: absolute;
-                bottom: 15px;
-                left: 0;
-                width: 0;
-                height: 4px;
-                background-color: yellow;
-                border-bottom: 4px solid blue;
-                transition: 1s;
-            }
-            a:hover::before {
-                width: 100%;
-            }
-            a::after {
-                content: '';
-                position: absolute;
-                bottom: 11px;
-                left: 0;
-                width: 0;
-                height: 4px;
-                background-color: yellow;
-                transition: 1s;
-            }
-            a:hover::after {
-                width: 100%;
-            }  
+            
+            
             
         }
         .menu__btn{
-            display: none;
-            button{
-                border: none;
-                outline: none;
+                display: none;
                 &:after{
                     content: "\f0c9";
                     font-family: "icomoon";
-                    font-size: 25px;
-                    color: $green;
-                    margin-bottom: 24px;
-                }
+                    font-size: 20px;
+                    color: $green;                              
             }
 
         }
