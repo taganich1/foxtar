@@ -126,15 +126,77 @@
         .menu a{
             display: block; 
             line-height: 10px;
+            font-size: 20px!important;
         }
         .header__navigation li a {
             line-height: 30px!important; 
             color: #fff;
-            font-size: 14px;
+            font-size: 30px;
             font-weight: 500;
             padding: 0;
         }
     .banner__search input{
         width: 400px;
-    }    
+    } 
+    .strengths__title-text{
+        font-size: 18px;
+        line-height: 25px;
+
+    }
+    .strengths__text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .products-new__title{
+        font-size: 32px;
+    }
+    .product-trend__title{
+        font-size: 32px;
+    }
+    .partnership__title{
+        font-size: 26px;
+    }
+    .partnership__inner{
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .partnership__wrapper{
+        width: 100%;
+    }
+    .partnership__btn{
+        width: 200px;
+    }
+    .tutorials{
+        &__img img{
+            width: 170px;
+        }
+        &__item{
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        &__title{
+            font-size: 30px;
+        }
+        .col-sm-4{
+            width: 100%;
+        }
+    }
+    .banner__title{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 1326px){
+    .products-new__item{
+        width: 100%;
+        margin-left: 15px;
+    }
+    .slider__item{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
 }
