@@ -2,12 +2,13 @@
 
 .pages{
     display: grid;
-    grid-template-columns: 157px 344px 344px 322px;
-    grid-gap: 26px;
+    grid-template-columns: 157px 344px 344px 332px;
+    grid-auto-rows: minmax(148px, 296px);
+    grid-column-gap: 26px;
+    
 }
 
 .container{
     width: 1200px;
 }
-
 
