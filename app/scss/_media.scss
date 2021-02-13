@@ -1730,3 +1730,19 @@ font-size: 8px;
 }
 }      
 }
+
+
+
+
+@media (max-width:1300px){
+    .container-grid{
+        width: 1250px;
+        grid-template-columns: 157px 344px 329px;
+        grid-template-rows: minmax(23px,auto);
+    }
+    .name-outlined{
+        grid-column: 3 / 5;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+}
