@@ -1736,13 +1736,122 @@ font-size: 8px;
 
 @media (max-width:1300px){
     .container-grid{
-        width: 1250px;
+        width: 1000px;
         grid-template-columns: 157px 344px 329px;
-        grid-template-rows: minmax(23px,auto);
-    }
-    .name-outlined{
-        grid-column: 3 / 5;
-        grid-column-start: 3;
-        grid-column-end: 5;
+        grid-template-areas: 
+        "item1 . item2"
+        "item3 item4 item6"
+        "item7 item8 item10"
+        "item11 item12 item10"
+        ". item14 ."
+        ". item5 ."
+        ". item9 ."
+        ". item13 .";
+        
     }
 }
+
+
+
+@media (max-width:1100px){
+    .container-grid{
+        max-width:600px;
+        grid-template-columns: 157px 344px ;
+        grid-template-areas: 
+        "item1 item2"
+        "item3 item4 "
+        "item7 item8 "
+        "item11 item12 "
+        ". item5 "
+        ". item9 "
+        ". item13 "
+        ". item10"
+        ". item6"
+        ". item14";
+    }
+    .name-outlined{
+        text-align: end;
+    }
+    .headline5-img{
+        width: 344px;
+        max-width: 344px;
+    }
+}
+
+
+
+@media (max-width:1100px){
+    .container-grid{
+        display: grid;
+        max-width: 500px;
+        margin: 0 auto;
+        grid-template-columns: 300px ;
+        grid-template-areas: 
+        "item1"
+        "item3 "
+        "item7 "
+        "item11 "
+        "item2"
+        "item4"
+        "item5 "
+        "item8"
+        "item9 "
+        "item12"
+        "item13 "
+        "item10"
+        "item6"
+        "item14";
+    }
+    .name-outlined{
+        text-align: start;
+    }
+    .headline5-img{
+        width: 344px;
+        max-width: 344px;
+    }
+    .users-item{
+        max-width: 157px;
+        text-align: center;
+    }
+    .colors-item{
+        max-width: 157px;
+    }
+    .fruits-item{
+        max-width: 157px;
+    }
+    .headline2-img{
+        margin-left: 5px;
+        max-width: 70px;
+        max-height: 70px;
+        min-height: 70px;
+        min-width: 70px;
+    }
+    .headline4-img{
+        margin-left: 5px;
+        max-width: 70px;
+        max-height: 70px;
+        min-height: 70px;
+        min-width: 70px;
+    }
+    .headline6-img{
+        margin-left: 5px;
+        max-width: 266px;
+        min-width: 266px;
+        margin-left: 0;
+    }
+    .headline5-img{
+        max-width: 300px;
+        min-width: 300px;
+        margin-left: -1px;
+    }
+    .headline8-img{
+        margin-left: 5px;
+        max-width: 266px;
+        min-width: 266px;
+        margin-left: 0;
+    }
+    .headline8__favorite{
+        padding-left: 20px;
+    }
+}
+
